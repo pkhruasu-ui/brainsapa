@@ -1,0 +1,21 @@
+<div class="container webcontent">  
+  <h1 class="h1 text-uppercase"><strong>{{topics.categoryName}}</strong></h1>      
+</ul>
+  <div class="list-group">    
+    <a href="#" class="list-group-item list-group-noboard" ng-repeat="topic in topics.topics track by $index">      
+      <span class="list-group-item-heading topic-header">{{topic.disp_topic}}</span>  
+      <span class="badge badge-info">Comments: {{topic.comments}}</span>      
+      <span class="badge badge-warning">Vote: {{topic.votes}}</span>
+      <p class="list-group-item-text">
+        {{topic.author}}
+        <!-- <span class="pull-right">Tags: <span ng-repeat="tag in topic.tags">{{tag.tag}}&nbsp;</span></span> -->
+      </p>
+      <span class="cf"></span>
+            
+      <!-- <span class="badge">Tags: <span ng-repeat="tag in topic.tags">{{tag.tag}}&nbsp;</span></span> -->
+      
+      <!-- <span class="badge">Views: {{topic.viewNo}}</span>
+      <span class="badge">Posts: {{topic.replyNo}}</span> -->
+    </a>    
+  </div>    
+</div>  

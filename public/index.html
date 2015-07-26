@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html id="myApp">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- <script src="scripts/angular.js"></script> -->		
+		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheets/app.css">
+		<!-- <link rel="stylesheet" href="stylesheets/compile.css"> -->
+	</head>
+	<body ng-controller="masterCtrl">
+
+		<span ng-include="'./views/subViews/topNav.html'"></span>
+
+		<div ng-view="" id="content"></div>
+
+		<span ng-include="'./views/subViews/footer.html'"></span>
+		<!-- scripts loading-->
+		<!--<script type="text/javascript" src="bower_components/angular/angular.js"></script>-->
+		<!--<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>-->
+
+		 <script src="bower_components/requirejs/require.js" data-main="scripts/bootstrap.js"></script>
+		 <script src="bower_components/jquery/dist/jquery.js"></script>
+ 		<script  src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		 <!--<script src="bower_components/requirejs/require.js" data-main="scripts/main-built.js"></script>-->
+	</body>
+</html>
