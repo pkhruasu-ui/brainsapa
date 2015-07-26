@@ -1,1 +1,0 @@
-define(["./masterCtrl","./mainCtrl","./subCtrl"],function(){});

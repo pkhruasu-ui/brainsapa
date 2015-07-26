@@ -1,1 +1,0 @@
-define(["./sample-service"],function(){});
