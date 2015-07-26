@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="topNavCtrl">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigatissson</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ng-href="#/myApp/main">Brainsapa</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <li ng-class="{'active' : activeLink == 'dashboard'}" ng-click="activeLink = 'dashboard'"><a ng-href="#/myApp/main">หน้าหนึ่ง</a></li>
+        <!-- <li ng-class="{'active' : activeLink == 'mainboard'}" ng-click="activeLink = 'mainboard'"><a href="#/myApp/board">กระดานข่าว</a></li> -->
+        <li ng-class="{'active' : activeLink == 'aboutme'}" ng-click="activeLink = 'aboutme'"><a href="#contact">เกี่ยวกับเรา</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">        
+        <li ng-class="{'active' : activeLink == 'sigin'}" ng-click="activeLink = 'sigin'"><a ng-href="#/myApp/login">เข้าสู่ระบบ/สมัครสมาชีก</a></li>        
+      </ul>
+    </div>
+  </div>
+</nav>
